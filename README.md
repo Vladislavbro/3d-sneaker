@@ -31,7 +31,7 @@ The notebook contains the complete pipeline:
 6. **Feature Extraction** - CLIP and SAM features (optional)
 7. **Model Export** - Download final model
 
-### ⭐ Current Configuration
+### Current Configuration
 
 The notebook is configured with the **optimized SAM pre-processing pipeline**, which provides the best quality-to-performance ratio:
 
