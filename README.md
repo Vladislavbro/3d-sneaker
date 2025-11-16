@@ -37,10 +37,10 @@ The notebook is configured with the **optimized SAM pre-processing pipeline**, w
 
 ```python
 # Active settings:
-- SAM background masking: ✅ ENABLED
+- SAM background masking: ENABLED
 - MASK_INDEX: 1 (adjust based on your object)
-- White background: ✅ ENABLED
-- Post-processing: ❌ DISABLED (not needed)
+- White background: ENABLED
+- Post-processing: DISABLED (not needed)
 ```
 
 **Expected runtime:** ~2 hours on L4 GPU
@@ -64,7 +64,7 @@ The notebook is configured with the **optimized SAM pre-processing pipeline**, w
    - Reduce `--num_sampled_rays` from 500 to 300
    - Increase `--resolution` from 2 to 4
 
-## 🧹 Optional Post-Processing (`sneaker_cleaning.ipynb`)
+## Optional Post-Processing (`sneaker_cleaning.ipynb`)
 
 **Use this only if you want to experiment with post-processing methods.**
 
