@@ -26,7 +26,7 @@ The notebook contains the complete pipeline:
 1. **Environment Setup** - Install dependencies and compile CUDA modules
 2. **Data Upload** - Upload your video/images
 3. **COLMAP Reconstruction** - Camera pose estimation and sparse reconstruction
-4. **SAM Pre-processing** ⭐ - Background removal (currently active)
+4. **SAM Pre-processing** - Background removal (currently active)
 5. **3DGS Training** - Main model training
 6. **Feature Extraction** - CLIP and SAM features (optional)
 7. **Model Export** - Download final model
@@ -50,7 +50,7 @@ The notebook is configured with the **optimized SAM pre-processing pipeline**, w
 - Rendering: 90 FPS @ 1080p
 - Clean object without background
 
-### 📝 Important Notes
+### Important Notes
 
 1. **MASK_INDEX Selection**: After SAM generates masks, you'll see a 2x5 grid visualization. The notebook is set to `MASK_INDEX = 1`, but **adjust this if your object appears under a different index**.
 
@@ -86,7 +86,7 @@ This notebook provides point cloud cleanup utilities:
 
 **Note:** With the SAM pre-processing pipeline, this step is typically unnecessary.
 
-## 📊 Expected Outputs
+## Expected Outputs
 
 After running the main pipeline, you'll get:
 
@@ -104,7 +104,7 @@ model_for_gui.zip containing:
     └── sam_masks/
 ```
 
-## 🎯 Tips for Best Results
+## Tips for Best Results
 
 1. **Input Video Quality:**
    - Capture 360° around the object
@@ -127,7 +127,7 @@ model_for_gui.zip containing:
    - Choose the one that best isolates your object
    - Update `MASK_INDEX` in the notebook if needed
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **"COLMAP camera model OPENCV not handled"**
 → The notebook handles this automatically with `colmap image_undistorter`
@@ -141,13 +141,13 @@ model_for_gui.zip containing:
 **"No sparse reconstruction"**
 → Your video may lack sufficient texture/overlap - try re-capturing
 
-## 📚 References
+## References
 
 - [3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
 - [SegAnyGAussians](https://jumpat.github.io/SAGA/)
 - [Segment Anything Model (SAM)](https://segment-anything.com/)
 
-## 📄 License
+## License
 
 This project uses code from SegAnyGaussians and 3D Gaussian Splatting, which are licensed for research and non-commercial use.
 
